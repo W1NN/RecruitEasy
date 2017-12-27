@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CBE11D41FF3D1DA005B4376 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE11D31FF3D1DA005B4376 /* item.swift */; };
 		0CD7DF8E1FEFC77300F67496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD7DF8D1FEFC77300F67496 /* AppDelegate.swift */; };
 		0CD7DF901FEFC77300F67496 /* RecruitEasyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD7DF8F1FEFC77300F67496 /* RecruitEasyListViewController.swift */; };
 		0CD7DF931FEFC77300F67496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD7DF911FEFC77300F67496 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CBE11D31FF3D1DA005B4376 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 		0CD7DF8A1FEFC77300F67496 /* RecruitEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecruitEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD7DF8D1FEFC77300F67496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CD7DF8F1FEFC77300F67496 /* RecruitEasyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitEasyListViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CBE11D51FF3D1E4005B4376 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CBE11D31FF3D1DA005B4376 /* item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		0CBE11D61FF3D1FA005B4376 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CD7DF8F1FEFC77300F67496 /* RecruitEasyListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0CBE11D71FF3D207005B4376 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CD7DF911FEFC77300F67496 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CBE11D81FF3D21E005B4376 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CD7DF941FEFC77300F67496 /* Assets.xcassets */,
+				0CD7DF961FEFC77300F67496 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0CD7DF811FEFC77200F67496 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				0CD7DF8D1FEFC77300F67496 /* AppDelegate.swift */,
-				0CD7DF8F1FEFC77300F67496 /* RecruitEasyListViewController.swift */,
-				0CD7DF911FEFC77300F67496 /* Main.storyboard */,
-				0CD7DF941FEFC77300F67496 /* Assets.xcassets */,
-				0CD7DF961FEFC77300F67496 /* LaunchScreen.storyboard */,
+				0CBE11D61FF3D1FA005B4376 /* Controllers */,
+				0CBE11D51FF3D1E4005B4376 /* Data Model */,
+				0CBE11D71FF3D207005B4376 /* Views */,
+				0CBE11D81FF3D21E005B4376 /* Supporting Files */,
 				0CD7DF991FEFC77300F67496 /* Info.plist */,
 			);
 			path = RecruitEasy;
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CD7DF901FEFC77300F67496 /* RecruitEasyListViewController.swift in Sources */,
+				0CBE11D41FF3D1DA005B4376 /* item.swift in Sources */,
 				0CD7DF8E1FEFC77300F67496 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

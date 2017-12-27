@@ -11,9 +11,15 @@ import UIKit
 class RecruitEasyListViewController: UITableViewController {
     
     var itemArray = ["Contact Candidate", "Screen Candidate", "Schedule Interview", "Interview Feedback", "Make Offer", "Candidate Scorecard"]
+    
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let items = defaults.array(forKey: "TodoListArray") as? [String] {
+            itemArray = items
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -56,6 +62,8 @@ class RecruitEasyListViewController: UITableViewController {
             //what will happen once the user clicks the Add Item button on our UIAlert
             
             self.itemArray.append(textField.text!)
+            
+            self.defaults.set(self.itemArray, forKey: "TodoListArray")
             
             self.tableView.reloadData()
         }
